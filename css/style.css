@@ -1,0 +1,230 @@
+:root {
+  --fontFamily: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: var(--fontFamily) !important;
+  /* min-height: 1500px; */
+}
+
+/*
+   Navigasi
+
+*/
+#custom-nav {
+  background-color: #fff;
+  min-height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+#custom-nav .navbar-brand {
+  font-size: 28px;
+  font-weight: 600;
+  font-style: italic;
+  color: black;
+  letter-spacing: 1px;
+}
+/* 
+  Utility
+
+*/
+#tombol {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  border-radius: 5px;
+  border: none;
+}
+#tombol:focus {
+  transition: all 0.3s ease;
+}
+.check-button {
+  background: url("/img/pensil.png");
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 15px;
+  padding: 3px;
+  /* background-color: #fafafa; */
+  border-radius: 10px;
+}
+.trash-button {
+  background: url("/img/delete.png");
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  object-fit: cover;
+  object-position: center;
+}
+.undo-button {
+  background: url("/img/undo-circular-arrow.png");
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: none;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 10px;
+}
+/*
+ Section 
+
+*/
+.bookshelfContainer {
+  margin-top: 3rem;
+  padding: 20px;
+}
+.bookshelfTambahData {
+  width: 100%;
+  /* height: 500px; */
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+.form-group > label {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+.form-group > input {
+  font-size: 18px;
+  font-weight: 400;
+  background-color: rgb(224, 224, 224);
+}
+.form-group > select {
+  background-color: rgb(224, 224, 224);
+}
+.form-group option {
+  background-color: #fff;
+}
+
+/*
+   Belum selesai dibaca
+ */
+
+.booksNotCompleted {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  position: relative;
+}
+.info {
+  margin-bottom: 5px;
+  margin-left: 5px;
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+  text-transform: capitalize;
+  margin-top: 4rem;
+  /* border-bottom: 1px solid black; */
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+.books-list-item {
+  width: 500px;
+  max-width: 100%;
+  height: 300px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.books-list-item > h5 {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  /* border-bottom: 3px solid black; */
+}
+.books-list-item > p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+.books-list-item > p:nth-child(3) {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  margin-top: -15px;
+}
+.books-list-item > p:nth-child(4) {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  margin-top: -15px;
+  margin-bottom: 50px;
+}
+.books-list-item > p,
+span {
+  font-weight: bold;
+}
+
+/*
+   Buku selesai dibaca
+
+*/
+.booksCompleted {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+.info2 {
+  margin-top: 5rem;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+  text-transform: capitalize;
+  margin-top: 4rem;
+  /* border-bottom: 1px solid black; */
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .info {
+    text-align: left;
+  }
+  .books-list-item {
+    width: 250px;
+  }
+  .books-list-item > h5 {
+    font-size: 20px;
+  }
+  .books-list-item > p:nth-child(2) {
+    font-size: 16px;
+  }
+  .books-list-item > p:nth-child(3) {
+    font-size: 16px;
+  }
+  .books-list-item > p:nth-child(4) {
+    font-size: 16px;
+  }
+  .info2 {
+    text-align: left;
+  }
+}

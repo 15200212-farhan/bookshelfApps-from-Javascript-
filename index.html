@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="BookshelfApps" />
+    <meta name="author" content="Farhan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/sweetalert2.min.css" />
+    <link rel="shortcut icon" href="/img/book.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bookshelf Apps</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-white" id="custom-nav">
+      <div class="container">
+        <span class="navbar-brand mb-0 h1">BookshelfApps</span>
+      </div>
+    </nav>
+
+    <!-- content -->
+    <main id="content">
+      <div class="container">
+        <section class="bookshelfContainer">
+          <!-- row bookshelTambahdata -->
+          <div class="row bookshelfTambahData">
+            <div class="col-12">
+              <form
+                action=""
+                method="post"
+                enctype="multipart/form-data"
+                id="formTambahData"
+                autocomplete="off"
+              >
+                <div class="form-group">
+                  <label for="judulBuku">Judul buku</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="judulBuku"
+                    name="judulBuku"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="penulis">Penulis</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="penulis"
+                    name="penulis"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="penerbit">Penerbit</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="penerbit"
+                    name="penerbit"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <select
+                    class="custom-select"
+                    id="tahunTerbit"
+                    name="tahunTerbit"
+                    required
+                  >
+                    <option selected>Tahun terbit</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-warning" id="tombol">
+                  Simpan
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Buku belum selesai dibaca -->
+          <h3 class="info">Belum selesai dibaca</h3>
+          <div class="booksNotCompleted" id="booksNotCompleted"></div>
+
+          <!-- Buku selesai dibaca -->
+          <h3 class="info2">Selesai dibaca</h3>
+          <div class="booksCompleted" id="booksCompleted"></div>
+        </section>
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/js/sweetalert/sweetalert2.all.min.js"></script>
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/scripts/storage.js"></script>
+    <script src="/js/scripts/main.js"></script>
+  </body>
+</html>
